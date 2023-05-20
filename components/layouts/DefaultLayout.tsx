@@ -16,8 +16,10 @@ const DefaultLayout: FC<Props> = ({
 }): JSX.Element => {
     return (
         <>
-            <AppHead title={''} description={description} keywords={keywords} />
-            {children}
+            <AppHead title={title} description={description} keywords={keywords} />
+            <div id="page" className="hfeed site">
+                {children}
+            </div>
         </>
     );
 };

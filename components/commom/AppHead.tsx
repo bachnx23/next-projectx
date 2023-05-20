@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-title-in-document-head */
-// eslint-disable-next-line @next/next/no-document-import-in-page
-import Head from 'next/document';
+import Head from 'next/head';
 import { FC } from 'react';
 
 interface Props {
@@ -16,9 +14,12 @@ const AppHead: FC<Props> = ({
     description,
     keywords
 }): JSX.Element => {
-    return (<Head>
+    return (
+    <Head>
         <title>{title ? title + " | " + APP_NAME : APP_NAME}</title>
-        <meta content={description} name="description" />
-    </Head>);
+        {description && <meta content={description} name="description" />}
+        {keywords && <meta content={keywords} name="keywords" />}
+    </Head>
+    );
 };
 export default AppHead;

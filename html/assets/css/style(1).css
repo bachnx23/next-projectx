@@ -1,0 +1,107 @@
+/*!
+Theme Name: Blog Personal Plus
+Theme URI: https://theme404.com/downloads/blog-personal-plus/
+Author: Theme404
+Author URI: https://theme404.com/
+Description: Blog  Personal PLus is child theme of Blog Personal which is clean, well structured, sparkling, user-friendly, flexible, dynamic and attention-grabbing WordPress Magazine Theme with a sleek feel that’s perfect for news sites, editorial websites and online magazines.An incredible addition to the WordPress Blog Theme collection! Taking care of all of your needs and requirements to create a stunning WordPress blog site; Personal Blog is the answer to all your problems! That’s right, this theme is crafted and designed in a way that will leave all of your users stunned. Not only is this visually amazing to look at, but this template is rich with tons of amazing features. 
+Version: 1.0.2
+Template: blog-personal
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blog-personal-plus
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, grid-layout, one-column, two-columns, full-width-template, post-formats, theme-options, blog, news, portfolio
+
+Blog Personal Plus WordPress Theme, Copyright (C) 2018, Theme404
+Blog Personal Plus is distributed under the terms of the GNU GPL
+
+Blog Personal Plus WordPress Theme is child theme of Blog Personal WordPress Theme, Copyright 2018 Theme404
+Blog Personal WordPress Theme is distributed under the terms of the GNU GPL
+
+*/
+body{
+    overflow-x: hidden;
+}
+
+#secondary .widget .entry-title {
+    font-size: 25px;
+    position: absolute;
+    text-transform: capitalize;
+    font-weight: 600;
+    top: -17px;
+    background: #fff;
+    margin-left: -26px;
+    display: inline-block;
+    padding-right: 30px;
+
+}
+
+.woocommerce input[type="number"] {
+    height: 45px;
+    padding: 10px 10px 10px;
+}
+
+.woocommerce ul.cart_list li a, 
+.woocommerce ul.product_list_widget li a{
+	font-weight: 600;
+}
+
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce span.onsale,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range{
+    background-color: #baa378;
+}
+
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content{
+    background-color: #D4D5D9;
+}
+
+.widget.woocommerce .star-rating span{
+	color: #baa378;
+}
+.woocommerce .widget_price_filter .ui-slider-horizontal{
+    height: 0.35em;
+}
+.woocommerce .star-rating {
+    height: 1em;
+    line-height: 1;
+    font-size: 0.8em;
+    width: 18.4em;
+    letter-spacing: 5px;
+}
+
+.woocommerce #content table.cart td.actions .input-text, 
+.woocommerce table.cart td.actions .input-text, 
+.woocommerce-page #content table.cart td.actions .input-text, 
+.woocommerce-page table.cart td.actions .input-text{
+    width: 200px;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button{
+    padding: 0.900em 1em;
+}
+.woocommerce .woocommerce-result-count {
+    margin: 2em 1em 0em;
+}
+
+.site-header .post-blog-section.flexible-post{
+    width: 1170px;
+    margin:0 auto;
+    padding: 30px 15px 0;
+}
+
+.site-header .full-alignfull{
+    width: 100vw;
+    margin-left: calc( 50% - 50vw);
+    max-width: none;
+}

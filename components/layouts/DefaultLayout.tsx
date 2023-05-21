@@ -27,7 +27,11 @@ const DefaultLayout: FC<Props> = ({
                     <AppNav />
                     <LatestPost />
                 </header>
-                {children}
+                <div id="content" className="site-content">
+                    <div className="container">
+                        {children}
+                    </div>
+                </div>
             </div>
         </>
     );

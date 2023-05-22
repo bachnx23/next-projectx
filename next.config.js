@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'res.cloudinary.com', 'images.pexels.com', 'demo.theme404.com']
+    domains: ['images.unsplash.com', 'res.cloudinary.com', 'images.pexels.com', 'demo.theme404.com', 'cdn.bachduongblog.com']
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
       config.plugins.push(new webpack.ProvidePlugin({

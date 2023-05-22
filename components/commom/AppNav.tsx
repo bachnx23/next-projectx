@@ -18,7 +18,7 @@ const AppNav: FC<Props> = (props): JSX.Element => {
                     <div className="block-social-icons social-links">
                         <ul id="menu-social-menu" className="menu">
                             {socials.map((social, index) => (
-                                <li id={ "menu-item-" + (index + 1) }
+                                <li key={index} id={ "menu-item-" + (index + 1) }
                                 className="menu-item menu-item-type-custom menu-item-object-custom menu-item-119">
                                     <Link key={index} href={social.url} title={social.title}>{social.title}</Link>    
                                 </li>
@@ -38,7 +38,7 @@ const AppNav: FC<Props> = (props): JSX.Element => {
                                     {nav.childs && (
                                         <ul className="sub-menu">
                                             {nav.childs.map((child, cIdx) => (
-                                                    <li id={'menu-item-' + (cIdx+1)}
+                                                    <li key={cIdx} id={'menu-item-' + (cIdx+1)}
                                                         className="menu-item menu-item-type-post_type menu-item-object-page">
                                                         <Link key={cIdx} href={child.url} >{child.title}</Link>
                                                     </li>

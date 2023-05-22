@@ -14,7 +14,7 @@ const featuredPost = [
         categories: [
             {
                 title: 'Stories',
-                url: 'https://demo.theme404.com/blog-personal-plus/category/stories/'
+                url: '/category/stories/'
             }
         ] 
     },
@@ -27,11 +27,11 @@ const featuredPost = [
         categories: [
             {
                 title: 'Life',
-                url: 'https://demo.theme404.com/blog-personal-plus/category/life/'
+                url: '/category/life/'
             },
             {
                 title: 'Moments',
-                url: 'https://demo.theme404.com/blog-personal-plus/category/moments/'
+                url: '/category/moments/'
             },
         ] 
     },
@@ -44,7 +44,7 @@ const featuredPost = [
         categories: [
             {
                 title: 'Moments',
-                url: 'https://demo.theme404.com/blog-personal-plus/category/moments/'
+                url: '/category/moments/'
             },
         ] 
     },

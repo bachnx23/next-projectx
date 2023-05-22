@@ -1,6 +1,5 @@
 import { FC, ReactNode } from 'react';
 import AppHead, { APP_NAME } from '../commom/AppHead';
-import AppNav from '../commom/AppNav';
 import AppLogo from '../commom/AppLogo';
 import LatestPost from '../commom/LatestPost';
 import Link from 'next/link';
@@ -49,10 +48,9 @@ const DefaultLayout: FC<Props> = ({
     return (
         <>
             <AppHead title={title} description={description} keywords={keywords} />
-            <div id="page" className="hfeed site">
+            <div id="page" className="hfeed site" style={{ ['transform:' as string]: 'none'}}>
                 <header id="masthead" className="site-header site-default">
                     <AppLogo />
-                    <AppNav />
                     <LatestPost />
                 </header>
                 <div id="content" className="site-content">

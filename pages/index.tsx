@@ -50,9 +50,13 @@ const Home: NextPage<Props> = (props) => {
                     <section id="blog_personal_promo_slider-2" className="unique-post-section">
                         <OwlCarousel 
                             className="owl-carousel owl-theme owl-slider-demo unique-post-slider owl-loaded owl-drag"
-                            autoPlay={true}
                             items={1}
-                            loop={true}>
+                            loop={true}
+                            autoPlay={true}
+                            smartSpeed={900}
+                            animateOut={'fadeOut'}
+                            autoplayTimeout={5000}
+                            >
                             {postSliders.map((post, index) => (
                                 <PostItem key={index} post={post} imgWidth={752} imgHeight={450} showBackground={false}/>
                             ))}
@@ -64,7 +68,7 @@ const Home: NextPage<Props> = (props) => {
                         </header>
                         <div className="row">
                             {postMoments.map((post, index) => (
-                                <div className={classNames("custom-col-6", `post-wrapper-${index}`)}>
+                                <div key={index} className={classNames("custom-col-6", `post-wrapper-${index}`)}>
                                     <PostItem key={index} idx={index} post={post} imgWidth={360} imgHeight={251} type={2} isShowContent={index == 0} showBackground={false} />                                        
                                 </div>
                             ))}
@@ -73,6 +77,38 @@ const Home: NextPage<Props> = (props) => {
                 </main>
             </div>
         </div>
+        <div id="secondary" className="widget-area custom-col-4"
+              style={{ 
+                ['position' as string ]: 'relative',
+                ['overflow' as string]: 'visible',
+                ['box-sizing' as string]: 'border-box',
+                ['min-height' as string]: '1px'
+              }}
+              >
+              <div className="theiaStickySidebar"
+                  style={{
+                    ['padding-top' as string]: '0px',
+                    ['padding-bottom' as string]: '1px',
+                    ['position' as string]: 'static',
+                    ['transform' as string]: 'none'
+                  }}
+                  >
+                  <aside id="blog_personal_promo_slider-3" className="widget unique-post-section">
+                        <OwlCarousel 
+                            className="owl-carousel owl-theme owl-slider-demo unique-post-slider owl-loaded owl-drag"
+                            items={1}
+                            loop={true}
+                            autoPlay={true}
+                            smartSpeed={900}
+                            animateOut={'fadeOut'}
+                            >
+                            {postSliders.map((post, index) => (
+                                <PostItem key={index} post={post} imgWidth={752} imgHeight={450} showBackground={false}/>
+                            ))}
+                        </OwlCarousel>
+                  </aside>
+              </div>
+          </div>
       </div>
     </DefaultLayout>
   )

@@ -886,7 +886,9 @@ iframe {
     text-transform: uppercase;
 }
 .custom-logo-link{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -5100,6 +5102,11 @@ textarea:focus,
     font-size: 20px;
     top: -5px;
     right: 15px;
+}
+
+img.custom-logo {
+    width: 245px;
+    aspect-ratio: auto 245 / 50;
 }
 
 @media only screen and (max-width: 767px) {

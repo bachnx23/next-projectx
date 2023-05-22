@@ -73,13 +73,13 @@ const LatestPost: FC<Props> = (props): JSX.Element => {
                                                 ))}
                                             </span>
                                             <span className="posted-on"> 
-                                                <Link href={post.url} rel='bookmark'>
+                                                <Link key={post.slug} href={post.url} rel='bookmark'>
                                                     <time className="entry-date published">{post.create_time}</time>
                                                 </Link>
                                             </span>
                                         </div>
                                         <h3 className="entry-title"> 
-                                            <Link href={post.url}>
+                                            <Link key={post.slug} href={post.url}>
                                                 {post.title}
                                             </Link> 
                                         </h3>

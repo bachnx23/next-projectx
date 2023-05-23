@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Stories &#8211; Blog Personal</title>
+	<meta name='robots' content='max-image-preview:large' />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='stylesheet' id='wp-block-library-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1'
+		type='text/css' media='all' />
+	<style id='wp-block-library-theme-inline-css' type='text/css'>
+		.wp-block-audio figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-image figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-top: 4px solid;
+			border-bottom: 4px solid;
+			margin-bottom: 1.75em;
+			color: currentColor
+		}
+
+		.wp-block-pullquote__citation,
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer {
+			color: currentColor;
+			text-transform: uppercase;
+			font-size: .8125em;
+			font-style: normal
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			position: relative;
+			font-style: normal
+		}
+
+		.wp-block-quote.has-text-align-right {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote.has-text-align-center {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote.is-style-plain {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: "0 0 1em 0"
+		}
+
+		.wp-block-table thead {
+			border-bottom: 3px solid
+		}
+
+		.wp-block-table tfoot {
+			border-top: 3px solid
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		.wp-block-template-part.has-background {
+			padding: 1.25em 2.375em;
+			margin-top: 0;
+			margin-bottom: 0
+		}
+	</style>
+	<link rel='stylesheet' id='classic-theme-styles-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-includes/css/classic-themes.min.css?ver=1' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='contact-form-7-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.3'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='blog-personal-parent-style-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/style.css?ver=6.1.1'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='blog-personal-plus-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal-plus/style.css?ver=1.0.0'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/css/font-awesome.min.css?ver=4.7.0'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='blog-personal-google-fonts-css'
+		href='https://fonts.googleapis.com/css?family=Josefin+Sans%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i&#038;subset=latin%2Clatin-ext'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='owl.carousel-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/css/owl.carousel.min.css?ver=v2.2.1'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='owl.theme.default-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/css/owl.theme.default.min.css?ver=v2.2.1'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='meanmenu-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/css/meanmenu.css?ver=2.0.7'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='blog-personal-style-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal-plus/style.css?ver=6.1.1'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='blog-personal-responsive-css'
+		href='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/css/responsive.css?ver=1.0.0'
+		type='text/css' media='all' />
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-includes/js/jquery/jquery.min.js?ver=3.6.1'
+		id='jquery-core-js'></script>
+	<link
+		href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+		rel="icon" type="image/x-icon" />
+	<link rel="icon" href="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/site-logo-60x60.png"
+		sizes="32x32" />
+	<link rel="icon" href="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/site-logo.png"
+		sizes="192x192" />
+	<link rel="apple-touch-icon"
+		href="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/site-logo.png" />
+	<meta name="msapplication-TileImage"
+		content="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/site-logo.png" />
+</head>
+
+<body data-rsssl=1 class="archive category category-stories category-5 wp-custom-logo hfeed global-layout-right">
+	<div id="page" class="hfeed site">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header site-default">
+			<div class="hgroup-wrap" style="background-image:url(  )">
+
+				<div class="container">
+
+					<section class="site-branding">
+						<a href="https://demo.theme404.com/blog-personal-plus/" class="custom-logo-link" rel="home"><img
+								width="245" height="129"
+								src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/logo-01.png"
+								class="custom-logo" alt="Blog Personal" decoding="async" /></a>
+					</section>
+
+					<div id="navbar" class="navbar"> <!-- navbar starting from here -->
+
+						<nav id="site-navigation" class="navigation main-navigation">
+							<div class="thumb-icon">
+								<a href="#" target="_self"><i class="fa fa-thumbs-o-up"></i></a>
+								<div class="block-social-icons social-links">
+									<ul id="menu-social-menu" class="menu">
+										<li id="menu-item-119"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119">
+											<a href="https://facebook.com">Facebook</a></li>
+										<li id="menu-item-73"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73">
+											<a href="https://twitter.com">Twitter</a></li>
+										<li id="menu-item-71"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71">
+											<a href="https://plus.google.com">Google Plus</a></li>
+										<li id="menu-item-70"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70">
+											<a href="https://youtube.com">Youtube</a></li>
+										<li id="menu-item-72"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72">
+											<a href="http://instagram.com">instagram</a></li>
+										<li id="menu-item-74"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74">
+											<a href="http://pinterest.com">pinterest</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="menu-content-wrapper">
+								<div class="menu-top-menu-container">
+									<ul>
+										<li id="menu-item-58"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-58">
+											<a href="https://demo.theme404.com/blog-personal-plus/">Home</a></li>
+										<li id="menu-item-57"
+											class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-57">
+											<a href="https://demo.theme404.com/blog-personal-plus/blog/">Blog</a></li>
+										<li id="menu-item-112"
+											class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-112">
+											<a
+												href="https://demo.theme404.com/blog-personal-plus/category/travel/">Travel</a>
+										</li>
+										<li id="menu-item-63"
+											class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63">
+											<a
+												href="https://demo.theme404.com/blog-personal-plus/category/nature/">Nature</a>
+										</li>
+										<li id="menu-item-61"
+											class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-61">
+											<a
+												href="https://demo.theme404.com/blog-personal-plus/category/life/">Sidebar</a>
+											<ul class="sub-menu">
+												<li id="menu-item-55"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
+													<a
+														href="https://demo.theme404.com/blog-personal-plus/left-sidebar/">Left
+														Sidebar</a></li>
+												<li id="menu-item-54"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
+													<a
+														href="https://demo.theme404.com/blog-personal-plus/right-sidebar/">Right
+														Sidebar</a></li>
+												<li id="menu-item-56"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56">
+													<a href="https://demo.theme404.com/blog-personal-plus/47-2/">Full
+														Width</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-113"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113">
+											<a href="https://demo.theme404.com/blog-personal-plus/contact/">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</nav>
+
+						<div class="search-icon">
+							<a href="javascript:void(0)" title="Search">
+								<i class="fa fa-search"></i>
+							</a>
+						</div>
+
+					</div> <!-- navbar ends here -->
+
+				</div>
+			</div>
+
+			<div class="search-section">
+				<div class="search-container">
+					<form method="get" class="search-header" action="https://demo.theme404.com/blog-personal-plus/">
+						<input class="search-field" placeholder="Search &hellip;" value="" name="s" type="search"
+							autocomplete="off">
+						</label>
+						<div class="search-divider"></div>
+						<h5 classs="text-filed">Type to search</h5>
+					</form><!-- .search-form -->
+					<div class="close-icon">
+						<a href="javascript:void(0)">
+							<span>X</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="page-title-wrap">
+				<div class="container">
+					<div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs"
+						itemprop="breadcrumb">
+						<ul class="trail-items" itemscope itemtype="http://schema.org/BreadcrumbList">
+							<meta name="numberOfItems" content="3" />
+							<meta name="itemListOrder" content="Ascending" />
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+								class="trail-item trail-begin"><a href="https://demo.theme404.com/blog-personal-plus"
+									rel="home"><span itemprop="name">Home</span></a>
+								<meta itemprop="position" content="1" />
+							</li>
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+								class="trail-item"><a href="https://demo.theme404.com/blog-personal-plus/blog/"><span
+										itemprop="name">Blog</span></a>
+								<meta itemprop="position" content="2" />
+							</li>
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"
+								class="trail-item trail-end"><span itemprop="name">Stories</span>
+								<meta itemprop="position" content="3" />
+							</li>
+						</ul>
+					</div>
+					<h2 class="page-title">Stories</h2>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content">
+			<div class="container">
+				<div class="row">
+					<div id="primary" class="content-area custom-col-8">
+						<main id="main" class="site-main">
+
+
+							<div class="post-item-wrapper post-flexible">
+
+								<article id="post-165"
+									class="post-165 post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
+									<figure class="featured-image">
+										<img width="1280" height="853"
+											src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/photographer-407068_1280.jpg"
+											class="attachment-full size-full wp-post-image" alt="" decoding="async"
+											srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/photographer-407068_1280.jpg 1280w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/photographer-407068_1280-300x200.jpg 300w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/photographer-407068_1280-768x512.jpg 768w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/08/photographer-407068_1280-1024x682.jpg 1024w"
+											sizes="(max-width: 1280px) 100vw, 1280px" />
+									</figure>
+									<div class="post-content">
+										<header class="entry-header">
+											<div class="entry-meta">
+												<span class="cat-links"> <a
+														href="https://demo.theme404.com/blog-personal-plus/category/stories/"
+														rel="category tag">Stories</a></span><span class="posted-on"> <a
+														href="https://demo.theme404.com/blog-personal-plus/new-beauty-products-to-upgrade-your-may/"
+														rel="bookmark"><time class="entry-date published updated"
+															datetime="2018-08-14T08:34:16+00:00">August 14,
+															2018</time></a></span><span class="byline"> by <span
+														class="author vcard"><a class="url fn n"
+															href="https://demo.theme404.com/blog-personal-plus/author/kosish/">Kosish
+															Bhandari</a></span></span>
+											</div>
+											<h3 class="entry-title">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/new-beauty-products-to-upgrade-your-may/">New
+													Beauty Products to Upgrade Your May</a>
+											</h3>
+										</header>
+										<div class="entry-content">
+											<p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis at
+												eros nec lacinia. Pellentesque habitant morbi tristique senectus et
+												netus et malesuada fames ac turpis egestas. Sed viverra sollicitudin
+												odio quis facilisis. Sed at nisl eget erat dapibus pretium&hellip;</p>
+											</p>
+											<div class="read-more">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/new-beauty-products-to-upgrade-your-may/">CONTINUE
+													READING</a>
+											</div>
+										</div>
+									</div>
+								</article><!-- #post-165 -->
+								<article id="post-76"
+									class="post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
+									<figure class="featured-image">
+										<img width="4896" height="3264"
+											src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-1768766.jpg"
+											class="attachment-full size-full wp-post-image" alt="" decoding="async"
+											loading="lazy"
+											srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-1768766.jpg 4896w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-1768766-300x200.jpg 300w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-1768766-768x512.jpg 768w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-1768766-1024x683.jpg 1024w"
+											sizes="(max-width: 4896px) 100vw, 4896px" />
+									</figure>
+									<div class="post-content">
+										<header class="entry-header">
+											<div class="entry-meta">
+												<span class="cat-links"> <a
+														href="https://demo.theme404.com/blog-personal-plus/category/stories/"
+														rel="category tag">Stories</a></span><span class="posted-on"> <a
+														href="https://demo.theme404.com/blog-personal-plus/far-far-away-in-the-sea/"
+														rel="bookmark"><time class="entry-date published"
+															datetime="2018-05-16T07:16:24+00:00">May 16,
+															2018</time><time class="updated"
+															datetime="2018-05-28T06:18:40+00:00">May 28,
+															2018</time></a></span><span class="byline"> by <span
+														class="author vcard"><a class="url fn n"
+															href="https://demo.theme404.com/blog-personal-plus/author/theme404/">theme404</a></span></span>
+											</div>
+											<h3 class="entry-title">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/far-far-away-in-the-sea/">Far
+													Far Away in the Sea</a>
+											</h3>
+										</header>
+										<div class="entry-content">
+											<p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis at
+												eros nec lacinia. Pellentesque habitant morbi tristique senectus et
+												netus et malesuada fames ac turpis egestas. Sed viverra sollicitudin
+												odio quis facilisis. Sed at nisl eget erat dapibus pretium&hellip;</p>
+											</p>
+											<div class="read-more">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/far-far-away-in-the-sea/">CONTINUE
+													READING</a>
+											</div>
+										</div>
+									</div>
+								</article><!-- #post-76 -->
+								<article id="post-15"
+									class="post-15 post type-post status-publish format-standard has-post-thumbnail hentry category-stories">
+									<figure class="featured-image">
+										<img width="1280" height="891"
+											src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280.jpg"
+											class="attachment-full size-full wp-post-image" alt="" decoding="async"
+											loading="lazy"
+											srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280.jpg 1280w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280-300x209.jpg 300w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280-768x535.jpg 768w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280-1024x713.jpg 1024w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-3167297_1280-360x251.jpg 360w"
+											sizes="(max-width: 1280px) 100vw, 1280px" />
+									</figure>
+									<div class="post-content">
+										<header class="entry-header">
+											<div class="entry-meta">
+												<span class="cat-links"> <a
+														href="https://demo.theme404.com/blog-personal-plus/category/stories/"
+														rel="category tag">Stories</a></span><span class="posted-on"> <a
+														href="https://demo.theme404.com/blog-personal-plus/writing-new-life-chapter/"
+														rel="bookmark"><time class="entry-date published"
+															datetime="2018-05-16T05:37:13+00:00">May 16,
+															2018</time><time class="updated"
+															datetime="2018-05-25T07:26:28+00:00">May 25,
+															2018</time></a></span><span class="byline"> by <span
+														class="author vcard"><a class="url fn n"
+															href="https://demo.theme404.com/blog-personal-plus/author/theme404/">theme404</a></span></span>
+											</div>
+											<h3 class="entry-title">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/writing-new-life-chapter/">Writing
+													New Life Chapter</a>
+											</h3>
+										</header>
+										<div class="entry-content">
+											<p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis at
+												eros nec lacinia. Pellentesque habitant morbi tristique senectus et
+												netus et malesuada fames ac turpis egestas. Sed viverra sollicitudin
+												odio quis facilisis. Sed at nisl eget erat dapibus pretium&hellip;</p>
+											</p>
+											<div class="read-more">
+												<a
+													href="https://demo.theme404.com/blog-personal-plus/writing-new-life-chapter/">CONTINUE
+													READING</a>
+											</div>
+										</div>
+									</div>
+								</article><!-- #post-15 -->
+
+							</div>
+
+						</main><!-- #main -->
+					</div><!-- #primary -->
+
+					<div id="secondary" class="widget-area custom-col-4">
+						<aside id="search-2" class="widget widget_search">
+							<form role="search" method="get" class="search-form"
+								action="https://demo.theme404.com/blog-personal-plus/">
+								<label>
+									<span class="screen-reader-text">Search for:</span>
+									<input type="search" class="search-field" placeholder="Search &hellip;" value=""
+										name="s" />
+								</label>
+								<input type="submit" class="search-submit" value="Search" />
+							</form>
+						</aside>
+						<aside id="media_gallery-2" class="widget widget_media_gallery">
+							<h2 class="widget-title">Photo Of The Day</h2>
+							<div id='gallery-1' class='gallery galleryid-15 gallery-columns-3 gallery-size-thumbnail'>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/how-to-pack-for-vacation/holiday-2880261/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/holiday-2880261-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/holiday-2880261-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/holiday-2880261-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/traveller-visiting-ice-cave-with-amazing-eye-catching-scenes/winter-1127201/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/winter-1127201-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/winter-1127201-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/winter-1127201-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/how-travel-saved-my-life/white-2565766/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/white-2565766-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/white-2565766-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/white-2565766-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/beauty-of-nature/technology-792180/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-792180-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-792180-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/technology-792180-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/traveller-visiting-ice-cave-with-amazing-eye-catching-scenes/living-room-2155376-2/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/living-room-2155376-1-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/living-room-2155376-1-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/living-room-2155376-1-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/fashion-model-shoot/goat-2216868/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/goat-2216868-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/goat-2216868-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/goat-2216868-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/cheerful-loving-couple-bakers/girl-2931287/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-2931287-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-2931287-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/girl-2931287-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a href='https://demo.theme404.com/blog-personal-plus/adult-1867889-2/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/adult-1867889-1-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/adult-1867889-1-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/adult-1867889-1-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+								<figure class='gallery-item'>
+									<div class='gallery-icon landscape'>
+										<a
+											href='https://demo.theme404.com/blog-personal-plus/far-far-away-in-the-sea/notebook-3397136_1920-1/'><img
+												width="150" height="150"
+												src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/notebook-3397136_1920-1-150x150.jpg"
+												class="attachment-thumbnail size-thumbnail" alt="" decoding="async"
+												loading="lazy"
+												srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/notebook-3397136_1920-1-150x150.jpg 150w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/notebook-3397136_1920-1-60x60.jpg 60w"
+												sizes="(max-width: 150px) 100vw, 150px" /></a>
+									</div>
+								</figure>
+							</div>
+						</aside>
+						<aside id="recent-posts-2" class="widget widget_recent_entries">
+							<h2 class="widget-title">Recent Posts</h2>
+							<ul>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/new-beauty-products-to-upgrade-your-may/">New
+										Beauty Products to Upgrade Your May</a>
+									<span class="post-date">August 14, 2018</span>
+								</li>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/things-you-dont-know-about-me/">Things
+										you don’t know about me</a>
+									<span class="post-date">July 17, 2018</span>
+								</li>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/cheerful-loving-couple-bakers/">Cheerful
+										Loving Couple Bakers</a>
+									<span class="post-date">July 16, 2018</span>
+								</li>
+								<li>
+									<a href="https://demo.theme404.com/blog-personal-plus/alone-in-the-city/">Alone in
+										the City</a>
+									<span class="post-date">July 16, 2018</span>
+								</li>
+								<li>
+									<a href="https://demo.theme404.com/blog-personal-plus/daily-reading-lists/">Daily
+										Reading Lists</a>
+									<span class="post-date">June 16, 2018</span>
+								</li>
+							</ul>
+
+						</aside>
+						<aside id="categories-2" class="widget widget_categories">
+							<h2 class="widget-title">Categories</h2>
+							<ul>
+								<li class="cat-item cat-item-4"><a
+										href="https://demo.theme404.com/blog-personal-plus/category/life/">Life</a>
+								</li>
+								<li class="cat-item cat-item-3"><a
+										href="https://demo.theme404.com/blog-personal-plus/category/moments/">Moments</a>
+								</li>
+								<li class="cat-item cat-item-6"><a
+										href="https://demo.theme404.com/blog-personal-plus/category/nature/">Nature</a>
+								</li>
+								<li class="cat-item cat-item-5 current-cat"><a aria-current="page"
+										href="https://demo.theme404.com/blog-personal-plus/category/stories/">Stories</a>
+								</li>
+								<li class="cat-item cat-item-7"><a
+										href="https://demo.theme404.com/blog-personal-plus/category/travel/">Travel</a>
+								</li>
+							</ul>
+
+						</aside>
+						<aside id="media_image-2" class="widget widget_media_image">
+							<h2 class="widget-title">Google Adsense</h2><img width="360" height="400"
+								src="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/ads2.jpg"
+								class="image wp-image-84  attachment-full size-full" alt="" decoding="async"
+								loading="lazy" style="max-width: 100%; height: auto;"
+								srcset="https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/ads2.jpg 360w, https://demo.theme404.com/blog-personal-plus/wp-content/uploads/2018/05/ads2-270x300.jpg 270w"
+								sizes="(max-width: 360px) 100vw, 360px" />
+						</aside>
+						<aside id="recent-posts-3" class="widget widget_recent_entries">
+							<h2 class="widget-title">Recent Buzz</h2>
+							<ul>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/new-beauty-products-to-upgrade-your-may/">New
+										Beauty Products to Upgrade Your May</a>
+								</li>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/things-you-dont-know-about-me/">Things
+										you don’t know about me</a>
+								</li>
+								<li>
+									<a
+										href="https://demo.theme404.com/blog-personal-plus/cheerful-loving-couple-bakers/">Cheerful
+										Loving Couple Bakers</a>
+								</li>
+								<li>
+									<a href="https://demo.theme404.com/blog-personal-plus/alone-in-the-city/">Alone in
+										the City</a>
+								</li>
+								<li>
+									<a href="https://demo.theme404.com/blog-personal-plus/daily-reading-lists/">Daily
+										Reading Lists</a>
+								</li>
+							</ul>
+
+						</aside>
+					</div><!-- #secondary -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- #content -->
+
+		<footer id="colophon" class="site-footer">
+
+			<div class="widget-area"> <!-- widget area starting from here -->
+				<div class="container">
+					<aside class="widget">
+						<div class="contact-detail">
+							<h3></h3>
+							<div class="textwidget">
+							</div>
+						</div>
+					</aside>
+					<div class="inline-social-icons social-links"> <!-- inline social links starting from here -->
+						<div class="menu-social-menu-container">
+							<ul id="menu-social-menu-1" class="menu">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119"><a
+										href="https://facebook.com">Facebook</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a
+										href="https://twitter.com">Twitter</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a
+										href="https://plus.google.com">Google Plus</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a
+										href="https://youtube.com">Youtube</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a
+										href="http://instagram.com">instagram</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a
+										href="http://pinterest.com">pinterest</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> <!-- widget area ends here -->
+
+			<div class="site-generator">
+				<div class="container">
+					<span class="copy-right">&nbsp;
+						Theme of <a target="_blank" rel="designer" href="https://theme404.com/">Theme404</a>
+					</span>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+		<div class="back-to-top">
+			<a href="#masthead" title="Go to Top" class="fa-angle-up"></a>
+		</div>
+
+	</div><!-- #page -->
+
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.3'
+		id='swv-js'></script>
+	<script type='text/javascript' id='contact-form-7-js-extra'>
+		/* <![CDATA[ */
+		var wpcf7 = { "api": { "root": "https:\/\/demo.theme404.com\/blog-personal-plus\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+	</script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.3'
+		id='contact-form-7-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/owl.carousel.min.js?ver=v2.3.4'
+		id='jquery-owl.carousel-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/jquery.meanmenu.js?ver=v2.0.8'
+		id='jquery.meanmenu-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/navigation.js?ver=20151215'
+		id='blog-personal-navigation-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/skip-link-focus-fix.js?ver=20151215'
+		id='blog-personal-skip-link-focus-fix-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/ResizeSensor.js?ver=v1.7.0'
+		id='jquery-ResizeSensor-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/theia-sticky-sidebar.js?ver=v1.7.0'
+		id='jquery-theia-sticky-sidebar-js'></script>
+	<script type='text/javascript'
+		src='https://demo.theme404.com/blog-personal-plus/wp-content/themes/blog-personal/assets/js/custom.js?ver=1.0.0'
+		id='blog-personal-custom-js'></script>
+
+</body>
+
+</html>

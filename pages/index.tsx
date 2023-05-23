@@ -23,7 +23,7 @@ interface Props {}
 
 const Home: NextPage<Props> = (props) => {
   return (
-    <DefaultLayout title={'Home Page'} keywords='blog, dev blogs'>
+    <DefaultLayout title={'Home Page'} keywords='blog, dev blogs' isHome={true}>
       <div className="row" style={{ ['transform' as string]: 'none'}} >
         <div id="primary" className="content-area custom-col-8"
             style={{ 

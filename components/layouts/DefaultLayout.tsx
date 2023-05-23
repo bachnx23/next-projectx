@@ -3,6 +3,7 @@ import AppHead, { APP_NAME } from '../commom/AppHead';
 import AppLogo from '../commom/AppLogo';
 import LatestPost from '../commom/LatestPost';
 import Link from 'next/link';
+import CategoryHead from '../commom/CategoryHead';
 
 interface Props {
     title: string;
@@ -10,6 +11,7 @@ interface Props {
     description?: string;
     children?: ReactNode;
     latestPost?: string[];
+    isHome?: boolean;
 }
 
 export const socials = [
@@ -44,6 +46,7 @@ const DefaultLayout: FC<Props> = ({
     children,
     keywords, 
     description,
+    isHome = false
 }): JSX.Element => {
     return (
         <>
@@ -51,7 +54,8 @@ const DefaultLayout: FC<Props> = ({
             <div id="page" className="hfeed site" style={{ ['transform:' as string]: 'none'}}>
                 <header id="masthead" className="site-header site-default">
                     <AppLogo />
-                    <LatestPost />
+                    {isHome && (<LatestPost />)}
+                    {!isHome && (<CategoryHead />)}
                 </header>
                 <div id="content" className="site-content">
                     <div className="container">

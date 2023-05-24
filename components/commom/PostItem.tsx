@@ -30,12 +30,12 @@ const PostItem: FC<Props> = ({ idx, post, imgWidth, imgHeight, type = 1, isShowC
                     <div className="entry-meta">
                         <span className="cat-links"> 
                             {post.categories.map((c) => (
-                                <Link key={c.url} href={c.url} rel={'category tag'} >{ c.title }</Link>
+                                <Link key={c.slug} href={`/category/${c.slug}`} rel={'category tag'} >{ c.title }</Link>
                             ))}
                         </span>
                         {post.create_time && (
                             <span className="posted-on"> 
-                                <Link key={post.url} href={post.url} title={post.title}>
+                                <Link key={post.slug} href={post.slug} title={post.title}>
                                     <time className="entry-date published updated">{post.create_time}</time>
                                 </Link>
                             </span>
@@ -43,19 +43,19 @@ const PostItem: FC<Props> = ({ idx, post, imgWidth, imgHeight, type = 1, isShowC
 
                         <span className="byline"> by 
                             <span className="author vcard">
-                                <Link key={post.author.slug} href={'/author/' + post.author.slug } title={'Posted by ' + post.author.name}>{post.author.name}</Link>
+                                <Link key={post.author.slug} href={`/author/${post.author.slug}`} title={'Posted by ' + post.author.name}>{post.author.name}</Link>
                             </span>
                         </span>
                     </div>
                     <h3 className="entry-title">
-                        <Link key={post.url} href={post.url} title={post.title}>{ post.title }</Link>
+                        <Link key={post.slug} href={post.slug} title={post.title}>{ post.title }</Link>
                     </h3>
                 </header>
                 {(type == 1 || isShowContent) && (
                     <div className="entry-content">
                         {post.content}
                         <div className="read-more">
-                            <Link key={post.url} href={post.url} title={post.title}>CONTINUE READING</Link>
+                            <Link key={post.slug} href={post.slug} title={post.title}>CONTINUE READING</Link>
                         </div>
                     </div>
                 )}

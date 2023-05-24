@@ -3,7 +3,7 @@ import AppHead, { APP_NAME } from '../commom/AppHead';
 import AppLogo from '../commom/AppLogo';
 import LatestPost from '../commom/LatestPost';
 import Link from 'next/link';
-import CategoryHead from '../commom/CategoryHead';
+import PageHead from '../commom/PageHead';
 
 interface Props {
     title: string;
@@ -55,7 +55,7 @@ const DefaultLayout: FC<Props> = ({
                 <header id="masthead" className="site-header site-default">
                     <AppLogo />
                     {isHome && (<LatestPost />)}
-                    {!isHome && (<CategoryHead />)}
+                    {!isHome && (<PageHead title={title} />)}
                 </header>
                 <div id="content" className="site-content">
                     <div className="container">

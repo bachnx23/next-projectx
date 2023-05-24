@@ -1741,7 +1741,7 @@ width: auto;
     text-transform: uppercase;
     position: relative;
     font-weight: 600;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     margin-right: 75px;
     display: inline-block;
 }

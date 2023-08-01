@@ -1,8 +1,12 @@
 import { FC } from 'react';
 
-interface Props {}
+interface Props {
+    title: string;
+}
 
-const CategoryHead: FC<Props> = (props): JSX.Element => {
+const PageHead: FC<Props> = ({
+    title
+}): JSX.Element => {
   return (
     <div className="page-title-wrap">
         <div className="container">
@@ -21,14 +25,14 @@ const CategoryHead: FC<Props> = (props): JSX.Element => {
                         <meta content="2" />
                     </li>
                     <li   
-                        className="trail-item trail-end"><span >Stories</span>
+                        className="trail-item trail-end"><span >{title}</span>
                     </li>
                 </ul>
             </div>
-            <h2 className="page-title">Stories</h2>
+            <h2 className="page-title">{title}</h2>
         </div>
     </div>
   );
 };
 
-export default CategoryHead;
+export default PageHead;

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { NextPage } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 import { Post } from '@/types/Type'
 import { Inter } from 'next/font/google'
 import { latestPosts } from '@/samples/LatestPost'
@@ -15,6 +15,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic'
 import classNames from 'classnames'
 import { postMoments } from '@/samples/Moments'
+import httpRequest from '@/types/HttpRequest'
 const OwlCarousel = dynamic(() => import('react-owl-carousel'), {ssr: false})
 
 const inter = Inter({ subsets: ['latin'] })
@@ -115,3 +116,15 @@ const Home: NextPage<Props> = (props) => {
 }
 
 export default Home
+
+
+export const getServerSideProps: GetServerSideProps<any> = 
+async () => {
+  const result = await httpRequest.get('/users')
+  
+  return {
+    props: {
+
+    }
+  }
+}
